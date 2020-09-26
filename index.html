@@ -11,29 +11,28 @@
     </header>
     <main class="container" id="container">
         <div class="form__group field">
-        <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
-        <label for="name" class="form__label">Location</label>
+            <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
+            <label for="name" class="form__label">Location</label>
         </div>
         <div class="main-details">
             <p id="city-name">NEW DELHI</p>
-            <p id="time">SUNDAY 2:35 AM</p>
         </div>
         <div id="image">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/1163/1163672.svg" alt="clouds" width=70px>
         </div>
         <div class="temperature-details">
             <p id="temperature">6°C</p>
-            <p id="greeting">GOOD NIGHT</p>
-            <p id="city-name-subtitle">NEW DELHI</p>
+            <p id="condition">SUNNY</p>
         </div>
         <footer>
             <div class="sunrise-sunset-info">
                 <div class="main-info-icon">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/3221/3221344.svg" alt="" width=30px>
+                    <img src="https://www.flaticon.com/svg/static/icons/svg/728/728093.svg" alt="" width=30px>
                 </div>
                 <div class="info-title">
-                    SUNRISE
+                    HUMIDITY
                 </div>
-                <div class="info">
+                <div class="info" id="humidity-info">
                     6.00
                 </div>
             </div>
@@ -44,7 +43,7 @@
                 <div class="info-title">
                     WIND
                 </div>
-                <div class="info">
+                <div class="info" id="wind-speed">
                     4m/s
                 </div>
             </div>
@@ -55,7 +54,7 @@
                 <div class="info-title">
                     MAXIMUM
                 </div>
-                <div class="info">
+                <div class="info" id="max-temp">
                     8°
                 </div>
             </div>
