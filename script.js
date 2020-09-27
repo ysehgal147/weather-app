@@ -16,7 +16,7 @@ function weatherTimeUpdate() {
       document.getElementById("city-name").innerHTML = (responseData.name).toUpperCase();
       document.getElementById("max-temp").innerHTML = responseData.main.temp_max + " °C";
       document.getElementById("wind-speed").innerHTML = responseData.wind.speed + " m/s";
-      document.getElementById("humidity-info").innerHTML = responseData.main.humidity + " m/s";
+      document.getElementById("humidity-info").innerHTML = responseData.main.humidity + " %";
       document.getElementById("condition").innerHTML = responseData.weather[0].description.toUpperCase();
       graphicsUpdate(responseData.weather[0].description.toUpperCase());
     });
